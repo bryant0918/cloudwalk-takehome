@@ -65,7 +65,10 @@ Softmax Output (10 digit probabilities)
 ### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
+pip install ffmpeg
+brew install python-tk
 ```
+
 
 **Note**: On macOS, you may need to install PyAudio separately:
 ```bash
@@ -97,11 +100,13 @@ python inference.py
 1. **🎤 Record (1s)**: Click to record 1 second of audio from your microphone
 2. **📁 Load Audio File**: Load an existing audio file for classification
 3. **🗑️ Clear**: Clear all results and visualizations
+4. **Audio Playback**: Listen to recorded audio.
 
 The interface displays:
 - **Real-time audio waveform** of your recording
 - **Prediction probabilities** for all 10 digits (0-9)
 - **Predicted digit** with confidence percentage
+- **Response Time** in ms.
 - **Status updates** during recording and processing
 
 ## 💻 Programmatic Usage
@@ -128,7 +133,6 @@ print(f"Digit: {digit}, Confidence: {confidence:.2%}")
 ### Model Performance
 - **Best Validation Accuracy**: 96.79%
 - **Final Test Accuracy**: 99.00%
-- **Improvement over baseline**: 175.0%
 
 ### Detailed Classification Report
 ```
@@ -226,13 +230,6 @@ classifier = DigitClassifierInference()
 result = classifier.predict(audio_data, sample_rate)
 ```
 
-## 📈 Future Enhancements
-
-- **Continuous Recognition**: Real-time streaming audio
-- **Multi-language Support**: Extend to other languages
-- **Web Interface**: Browser-based version
-- **Mobile App**: iOS/Android applications
-- **Model Ensemble**: Combine multiple models
 
 ## 🎉 Conclusion
 
