@@ -63,6 +63,15 @@ Softmax Output (10 digit probabilities)
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
+
+First create environment with python 3.13. For example,
+```bash
+conda create -n "Cloudwalk"
+conda activate Cloudwalk
+conda install python==3.13
+```
+
+Then install other requirements:
 ```bash
 pip install -r requirements.txt
 pip install ffmpeg
