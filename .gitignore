@@ -1,0 +1,10 @@
+*.mp4
+*.wav
+*.ogg
+*.flac
+*.m4v
+*.webm
+
+.DS_Store
+__pycache__/
+*.pyc

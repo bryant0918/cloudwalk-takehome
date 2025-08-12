@@ -1,0 +1,11 @@
+transformers
+torch==2.7
+torchcodec==0.4
+torchaudio
+datasets
+librosa
+scikit-learn
+matplotlib
+seaborn
+pyaudio
+numpy
